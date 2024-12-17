@@ -68,7 +68,7 @@ If you have questions or suggestions, feel free to reach out! You can reach me a
 - rebecca.levitsky@gmail.com
 
 ### Bonus: Weighted LTS Scores & TASA Funding
-*just a little addition, still a work in progress*
+*just a little addition, still a work in progress*<br>
 And finally, here is a rabbit hole I went down of trying to make a bivariate choropleth map that shows leveling of TASA funding per capita vs the average bicycle level of traffic stress (LTS) in a given municipality. LTS segements were weighted by their length, then grouped by municipality and averaged out.  So, the average LTS score for a given municipality reflects the amount of roadway miles they have.  I was only working with 12 rows here, so I was really stretching some of these jenks.  But, it matches my understanding of the data and I think it is an interesting rabbit hole I may explore further.  I spent the least amount of time fine tuning this one, but may come back to it:
 
 <div style="text-align: center;">
