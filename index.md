@@ -1,7 +1,8 @@
 # Distribution of Transportation Alternatives Set-Aside (TASA) Funding for Bicycle & Pedestrian Improvements in New Jersey
 
 by: Rebecca Levitsky  
-for: a Command-Line GIS Final Project, and my own interests
+for: my Command-Line GIS Final Project, and my own interests  
+date last updated: 12/16/24
 
 ## Intro
 The goal of this page is to gain insight into how TASA funds are distributed in New Jersey.  The federal TASA program is the [largest source of funding](https://www.fhwa.dot.gov/environment/bicycle_pedestrian/funding/) for Bicycle & Pedestrian projects in the US.  There are many, many other federal and state programs that fund active transportation projects as well, and the analysis that follows does not include information from these sources, for several reasons.  As it turns out, exact dollar amounts dedicated to bicycle & pedestrian improvements is a surprisingly tedious number to arrive at:
@@ -19,6 +20,23 @@ In New Jersey, TASA funds are not distributed every year - awards have been admi
 - the South Jersey Transportation Planning Organization (SJTPO)
 
 MPOs are *very important* for transportation planning and advancing active transportation goals - again, I won't get into the details, but keep in mind that they are federally-designated regional planning bodies that are tasked with managing a *region* as opposed to a specific city or county.  They exist because the greater Philadelphia region, for example, has its own unique needs and really should be considered as a whole when making strategic long-term plans and improvements.  There is a lot of coordination between MPOs, state DOTS, and local governments, and their capacity, priorities, and resources have a *huge* impact on the transportation infrastructure we all use every day. 
+
+## Data Sources
+The primary bulk of my data came from the **FHWA TASA Spending Reports** mentioned above.  This are published annually, but not updated, as they contain awards for distinct years. I manually compiled the relevant information in Excel before exporting to a csv.  Before exporting, they were *thoroughly* checked against the NJDOT's award information. 
+- these reports include each project as a row, so once they were loaded in python, the pandas library was used to split up each municipality
+- **Importantly**, for projects that touched multiple municipalities, the total award amount was divided evenly among each municipalities.  This is because there doesn't seem to be a standard logic (or documentation to that effect) as to how many municipalities get reported with the award.  The project is within the reported municipality, but there are some projects of regional significance that have several municipalities awarded.
+    - For example, the Grove Street Trail Connector in Camden County is a signficant project.  Grove Street runs from Haddonfield Borough to Cherry Hill Township, and the Connector      (situated on the municipal boundary dividing Haddonfield Borough and Cherry Hill Twp) will greatly improve the connectivity of the Cooper River Trail.  However, *Haddonfield Borough was not listed under the municipalities 'awarded' within this project*.  As such, I manually added this in, as this project provides a clear benefit to this municipality.  This was the only such project that had more than 2 or 3 municipalities listed, so I did not make this adjustment for any other municipality. 
+Other data sources included:
+- ACS 5-Year estimates (2022), accessed from the census library, for both county subdivision data and tract-level data
+    - many municipality names had to be edited slightly due to the way they are reported in the Census: 'Atlantic city city', for example, was adjusted to 'Atlantic City'
+- TIGERLine boundary files for county subdivisions and census tracts, accessed through the pygris library
+    - boundaries are from 2020 
+- DVRPC data from their lovely [data center](https://www.dvrpc.org/data/), including:
+    - Greater Philadelphia Trails, which were clipped to New Jersey, and filtered for paved trails in the Camden Area (shorter trails were also removed)
+        - data last updated 11/12/24
+    - Bicycle Level of Traffic Stress Network, which was similary clipped to the Camden area for visualization
+        - data last updated 11/12/24
+- A few [geojson.io](https://geojson.io/#map=2/0/20) files I compiled myself, mostly to show the Camden County LINK Trail and one particular TASA-funded project I found to be key towards this larger project. Projects were referenced to Camden County documents on these specific projects to ensure accuracy
 
 ## Alright, Onward!
 
