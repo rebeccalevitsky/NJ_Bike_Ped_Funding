@@ -24,9 +24,9 @@ MPOs are *very important* for transportation planning and advancing active trans
 
 This webmap provides an overview of all municipalities in New Jersey that have received funding through the TASA program for Bicycle & Pedestrian Improvement Projects:
 
-<div style="text-align:center;">
+<div style="text-align: center;">
     <iframe src="fundingmap.html"
-            height="auto"
+            height="600px"
             width="100%"
             style="border: none;">
     </iframe>
@@ -40,7 +40,9 @@ you can also explore this map [as its own webpage here](fundingmap.html)
 This map shows all awards at the county level.  Awards were grouped by the county they were in, and population data was gathered from the 2022 ACS 5-year Estimates.  TASA awards reveal some pretty interesting patterns when visualized by the total dollar amount, by the number of awards, and by the award level per capita:
 
 <div style="text-align: center;">
-    <img src="countydisttrans.png" alt="County Distribution of TASA Funding" style="width="100%; max-width: 1600px; heigh: auto"/>
+    <img src="countydisttrans.png" 
+         alt="County Distribution of TASA Funding" 
+         style="width: 100%; max-width: 1600px; height: auto;"/>
     <p><em>Figure 1: TASA funding by Counties in New Jersey.</em></p>
 </div>
 
@@ -48,7 +50,9 @@ This map shows all awards at the county level.  Awards were grouped by the count
 Same approach, but with municipal-level data intact and just zoomed in to show how this works out in the DVRPC New Jersey Region, which includes Burlington, Camden, Gloucester, and Mercer Counties:
 
 <div style="text-align: center;">
-    <img src="DVRPCdisttrans.png" alt="DVRPC Tasa Funding" style="width="100%; max-width: 1600px; heigh: auto"/>
+    <img src="DVRPCdisttrans.png" 
+         alt="DVRPC Tasa Funding" 
+         style="width: 100%; max-width: 1600px; height: auto;"/>
     <p><em>Figure 2: MPO-level funding breakdown.</em></p>
 </div>
 
@@ -58,8 +62,10 @@ So, what is the importance of all of this? I'm not even sure I began to arrive a
 The Grove Street Trail Connector will provide a key connection along the Cooper River Trail - where this trail crosses Grove Street, there were previously no accommodations for bicyclists and pedestrians.  In fact, there was a large concrete median smack dab in the middle of the crossing, and trail users had to cross the river and go a full block into Haddonfield to access a crosswalk.  This project is important because it will improve connection to the proposed [Camden County LINK Trail](https://www.camdencounty.com/service/parks/cross-county-trail/), a huge regional project to connect municipalities in Camden County.  Segements of the LINK Trail have also been funded through TASA (looking at you, Winslow Township).
 
 <div style="text-align: center;">
-    <img src="Camdentrans.png" alt="Camden Tasa Funding" style="width="100%; max-width: 1600px; heigh: auto"/>
-    <p><em>Figure 3: Camden Municipalities that have received TASA funding, and some other stuff.</em></p>
+    <img src="Camdentrans.png" 
+         alt="Camden Tasa Funding" 
+         style="width: 100%; max-width: 1600px; height: auto;"/>
+    <p><em>Figure 3: Camden Municipalities that have received TASA funding, and some other stuff</em></p>
 </div>
 
 ### Contact
@@ -72,8 +78,10 @@ If you have questions or suggestions, feel free to reach out! You can reach me a
 And finally, here is a rabbit hole I went down of trying to make a bivariate choropleth map that shows leveling of TASA funding per capita vs the average bicycle level of traffic stress (LTS) in a given municipality. LTS segements were weighted by their length, then grouped by municipality and averaged out.  So, the average LTS score for a given municipality reflects the amount of roadway miles they have.  I was only working with 12 rows here, so I was really stretching some of these jenks.  But, it matches my understanding of the data and I think it is an interesting rabbit hole I may explore further.  I spent the least amount of time fine tuning this one, but may come back to it:
 
 <div style="text-align: center;">
-    <img src="bivariatetrans.png" alt="Bike LTS/TASA Funding" style="width="100%; max-width: 1600px; heigh: auto"/>
-    <p><em>Figure 4: Camden Municipalities that have received TASA funding, and some other stuff.</em></p>
+    <img src="bivariatetrans.png" 
+         alt="Bike LTS/TASA Funding" 
+         style="width: 100%; max-width: 1600px; height: auto;"/>
+    <p><em>Figure 4: Bicycle LTS and TASA funding relationship in Camden.</em></p>
 </div>
   
 
