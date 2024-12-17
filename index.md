@@ -29,7 +29,7 @@ This webmap provides an overview of all municipalities in New Jersey that have r
             height="700"
             width="900"
             style="border: none;">
-  </iframe>
+    </iframe>
 </div>
 
 you can also explore this map [as its own webpage here](fundingmap.html)
