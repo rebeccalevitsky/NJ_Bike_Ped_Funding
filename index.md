@@ -26,9 +26,7 @@ This webmap provides an overview of all municipalities in New Jersey that have r
 
 <div style="text-align: center;">
     <iframe src="fundingmap.html"
-            height="600px"
-            width="90vw"
-            style="border: none;">
+            style="width: 90vw; max-width: 1600px; height: 600px; border: none;">
     </iframe>
 </div>
 
@@ -42,7 +40,7 @@ This map shows all awards at the county level.  Awards were grouped by the count
 <div style="text-align: center;">
     <img src="countydisttrans.png" 
          alt="County Distribution of TASA Funding" 
-         style="width: 100%; max-width: 1600px; height: auto;"/>
+         style="width: 90vw; max-width: 1600px; height: auto;"/>
     <p><em>Figure 1: TASA funding by Counties in New Jersey.</em></p>
 </div>
 
@@ -52,7 +50,7 @@ Same approach, but with municipal-level data intact and just zoomed in to show h
 <div style="text-align: center;">
     <img src="DVRPCdisttrans.png" 
          alt="DVRPC Tasa Funding" 
-         style="width: 100%; max-width: 1600px; height: auto;"/>
+         style="width: 90vw; max-width: 1600px; height: auto;"/>
     <p><em>Figure 2: MPO-level funding breakdown.</em></p>
 </div>
 
@@ -64,7 +62,7 @@ The Grove Street Trail Connector will provide a key connection along the Cooper 
 <div style="text-align: center;">
     <img src="Camdentrans.png" 
          alt="Camden Tasa Funding" 
-         style="width: 100%; max-width: 1600px; height: auto;"/>
+         style="width: 90vw; max-width: 1600px; height: auto;"/>
     <p><em>Figure 3: Camden Municipalities that have received TASA funding, and some other stuff</em></p>
 </div>
 
@@ -79,9 +77,9 @@ And finally, here is a rabbit hole I went down of trying to make a bivariate cho
 
 <div style="text-align: center;">
     <img src="bivariatetrans.png" 
-         alt="Bike LTS/TASA Funding" 
-         style="width: 100%; max-width: 1600px; height: auto;"/>
-    <p><em>Figure 4: Bicycle LTS and TASA funding relationship in Camden.</em></p>
+         alt="Bivariate Analysis of Bike LTS and TASA Funding" 
+         style="width: auto; height: 90vh; max-height: 1000px;"/>
+    <p><em>Figure 4: Vertical map showing Bike LTS and TASA funding relationship.</em></p>
 </div>
   
 
