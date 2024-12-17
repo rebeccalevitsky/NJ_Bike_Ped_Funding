@@ -22,7 +22,7 @@ In New Jersey, TASA funds are not distributed every year - awards have been admi
 MPOs are *very important* for transportation planning and advancing active transportation goals - again, I won't get into the details, but keep in mind that they are federally-designated regional planning bodies that are tasked with managing a *region* as opposed to a specific city or county.  They exist because the greater Philadelphia region, for example, has its own unique needs and really should be considered as a whole when making strategic long-term plans and improvements.  There is a lot of coordination between MPOs, state DOTS, and local governments, and their capacity, priorities, and resources have a *huge* impact on the transportation infrastructure we all use every day. 
 
 ## Data Sources
-The primary bulk of my data came from the **FHWA TASA Spending Reports** mentioned above.  This are published annually, but not updated, as they contain awards for distinct years. I manually compiled the relevant information in Excel before exporting to a csv.  Before exporting, they were *thoroughly* checked against the NJDOT's award information. 
+The primary bulk of my data came from the **FHWA TASA Spending Reports** mentioned above.  They are published annually, but not updated, as they contain awards for distinct years. I manually compiled the relevant information in Excel before exporting to a csv.  Before exporting, they were *thoroughly* checked against the NJDOT's award information. 
 - these reports include each project as a row, so once they were loaded in python, the pandas library was used to split up each municipality
 - **Importantly**, for projects that touched multiple municipalities, the total award amount was divided evenly among each municipalities.  This is because there doesn't seem to be a standard logic (or documentation to that effect) as to how many municipalities get reported with the award.  The project is within the reported municipality, but there are some projects of regional significance that have several municipalities awarded.
     - For example, the Grove Street Trail Connector in Camden County is a signficant project.  Grove Street runs from Haddonfield Borough to Cherry Hill Township, and the Connector      (situated on the municipal boundary dividing Haddonfield Borough and Cherry Hill Twp) will greatly improve the connectivity of the Cooper River Trail.  However, *Haddonfield Borough was not listed under the municipalities 'awarded' within this project*.  As such, I manually added this in, as this project provides a clear benefit to this municipality.  This was the only such project that had more than 2 or 3 municipalities listed, so I did not make this adjustment for any other municipality. 
@@ -42,9 +42,9 @@ Other data sources included:
 
 This webmap provides an overview of all municipalities in New Jersey that have received funding through the TASA program for Bicycle & Pedestrian Improvement Projects:
 
-<div style="text-align: center; margin: 0 auto;">
+<div style="text-align: center; margin: 0 auto; max-width: 100%;">
     <iframe src="fundingmap.html" 
-            style="display: block; width: calc(100% + 20vw); height: 600px; margin: 0 auto; border: none;">
+            style="width: 100%; height: 600px; margin: 0 auto; display: block; border: none;">
     </iframe>
 </div>
 
@@ -58,7 +58,7 @@ This map shows all awards at the county level.  Awards were grouped by the count
 <div style="text-align: center; margin: 0 auto;">
     <img src="countydisttrans.png" 
          alt="County Distribution of TASA Funding" 
-         style="display: block; width: calc(100% + 20vw); max-width: 1600px; height: auto; margin: 0 auto;"/>
+         style="width: 100%; max-width: 1600px; height: auto; display: block;"/>
     <p><em>Figure 1: TASA funding by Counties in New Jersey.</em></p>
 </div>
 
@@ -68,7 +68,7 @@ Same approach, but with municipal-level data intact and just zoomed in to show h
 <div style="text-align: center; margin: 0 auto;">
     <img src="DVRPCdisttrans.png" 
          alt="DVRPC TASA Funding" 
-         style="display: block; width: calc(100% + 20vw); max-width: 1600px; height: auto; margin: 0 auto;"/>
+         style="width: 100%; max-width: 1600px; height: auto; display: block;"/>
     <p><em>Figure 2: DVRPC-level funding breakdown.</em></p>
 </div>
 
@@ -80,7 +80,7 @@ The Grove Street Trail Connector will provide a key connection along the Cooper 
 <div style="text-align: center; margin: 0 auto;">
     <img src="Camdentrans.png" 
          alt="Camden TASA Funding" 
-         style="display: block; width: calc(100% + 20vw); max-width: 1600px; height: auto; margin: 0 auto;"/>
+         style="width: 100%; max-width: 1600px; height: auto; display: block;"/>
     <p><em>Figure 3: Camden Municipalities that have received TASA funding, and some other stuff.</em></p>
 </div>
 
@@ -96,7 +96,7 @@ And finally, here is a rabbit hole I went down of trying to make a bivariate cho
 <div style="text-align: center; margin: 0 auto;">
     <img src="bivariatetrans.png" 
          alt="Bivariate Analysis of Bike LTS and TASA Funding" 
-         style="display: block; width: auto; height: 90vh; max-height: 1000px; margin: 0 auto;"/>
+         style="width: auto; height: 90vh; max-height: 1000px; display: block;"/>
     <p><em>Figure 4: Vertical map showing Bike LTS and TASA funding relationship.</em></p>
 </div>
   
