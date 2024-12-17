@@ -64,8 +64,8 @@ The Grove Street Trail Connector will provide a key connection along the Cooper 
 
 ### Contact
 If you have questions or suggestions, feel free to reach out! You can reach me at:
--Rebecca Levitsky
--rebecca.levitsky@gmail.com
+- Rebecca Levitsky
+- rebecca.levitsky@gmail.com
 
 ### Bonus: Weighted LTS Scores & TASA Funding
 *just a little addition, still a work in progress*
