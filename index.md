@@ -1,5 +1,8 @@
 # Distribution of Transportation Alternatives Set-Aside (TASA) Funding for Bicycle & Pedestrian Improvements in New Jersey
 
+by: Rebecca Levitsky
+for: a Command-Line GIS Final Project, and my own interests
+
 ## Intro
 The goal of this page is to gain insight into how TASA funds are distributed in New Jersey.  The federal TASA program is the [largest source of funding](https://www.fhwa.dot.gov/environment/bicycle_pedestrian/funding/) for Bicycle & Pedestrian projects in the US.  There are many, many other federal and state programs that fund active transportation projects as well, and the analysis that follows does not include information from these sources, for several reasons.  As it turns out, exact dollar amounts dedicated to bicycle & pedestrian improvements is a surprisingly tedious number to arrive at:
 - different funding programs (at both federal and state levels) have different reporting requirements, and grantors (the USDOT or NJDOT, in this case) don't always report awards for every program
@@ -22,10 +25,10 @@ MPOs are *very important* for transportation planning and advancing active trans
 This webmap provides an overview of all municipalities in New Jersey that have received funding through the TASA program for Bicycle & Pedestrian Improvement Projects:
 
 <div style="text-align:center;">
-  <iframe src="fundingmap.html"
-    height="700"
-    width="900"
-    style="border: none;">
+    <iframe src="fundingmap.html"
+            height="700"
+            width="900"
+            style="border: none;">
   </iframe>
 </div>
 
@@ -59,10 +62,17 @@ The Grove Street Trail Connector will provide a key connection along the Cooper 
     <p><em>Figure 3: Camden Municipalities that have received TASA funding, and some other stuff.</em></p>
 </div>
 
-And finally, here is a rabbit hole I went down of trying to make a bivariate choropleth map that shows leveling of TASA funding per capita vs the average bicycle level of traffic stress (LTS) in a given municipality. LTS segements were weighted by their length, then grouped by municipality and averaged out.  So, the average LTS score for a given municipality reflects the amount of roadway miles they have.  I was only working with 12 rows here, so I was really stretching some of these jenks.  But, it matches my understanding of the data and I think it is an interesting rabbit hole I may explore further:
+### Contact
+If you have questions or suggestions, feel free to reach out! You can reach me at:
+-Rebecca Levitsky
+-rebecca.levitsky@gmail.com
+
+### Bonus: Weighted LTS Scores & TASA Funding
+*just a little addition, still a work in progress*
+And finally, here is a rabbit hole I went down of trying to make a bivariate choropleth map that shows leveling of TASA funding per capita vs the average bicycle level of traffic stress (LTS) in a given municipality. LTS segements were weighted by their length, then grouped by municipality and averaged out.  So, the average LTS score for a given municipality reflects the amount of roadway miles they have.  I was only working with 12 rows here, so I was really stretching some of these jenks.  But, it matches my understanding of the data and I think it is an interesting rabbit hole I may explore further.  I spent the least amount of time fine tuning this one, but may come back to it:
 
 <div style="text-align: center;">
-    <img src="Camdentrans.png" alt="Camden Tasa Funding" width="70%"/>
+    <img src="bivariatetrans.png" alt="Bike LTS/TASA Funding" width="70%"/>
     <p><em>Figure 4: Camden Municipalities that have received TASA funding, and some other stuff.</em></p>
 </div>
   
