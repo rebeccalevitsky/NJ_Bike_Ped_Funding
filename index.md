@@ -1,6 +1,6 @@
 # Distribution of Transportation Alternatives Set-Aside (TASA) Funding for Bicycle & Pedestrian Improvements in New Jersey
 
-by: Rebecca Levitsky
+by: Rebecca Levitsky  
 for: a Command-Line GIS Final Project, and my own interests
 
 ## Intro
