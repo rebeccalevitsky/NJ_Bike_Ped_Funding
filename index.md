@@ -26,7 +26,7 @@ This webmap provides an overview of all municipalities in New Jersey that have r
 
 <div style="text-align: center;">
     <iframe src="fundingmap.html"
-            style="width: 90vw; max-width: 1600px; height: 600px; border: none;">
+            style="width: 90vw; height: 600px; border: none;">
     </iframe>
 </div>
 
