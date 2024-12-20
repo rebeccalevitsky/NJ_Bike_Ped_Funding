@@ -49,6 +49,7 @@ TASA Bicycle & Pedestrian Projects were cross checked with the TASA awards that 
 Overall, between 2016-2023, NJDOT and the MPOs have awarded **$106,679,000 million** in TASA funding for Bicycle & Pedestrian Improvement Projects. Other key info for 2016-2023:
 - **110** Municipalities in New Jersey (out of 564) have received at least one TASA Bike/Ped award
 - **19** Municipalities have received more than one award <br>
+
 This webmap provides an overview of all municipalities in New Jersey that have received funding through the TASA program for Bicycle & Pedestrian Improvement Projects.  A hover will provide some quick information, a click will tell you specific project information and the years for which that municipality won awards: 
 
 <div style="width: calc(100% + 20vw); margin-left: -10vw; text-align: center;">
