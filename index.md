@@ -104,7 +104,7 @@ And finally, here is a rabbit hole I went down of trying to make a bivariate cho
 <div style="width: calc(100% + 20vw); margin-left: -10vw; text-align: center;">
     <img src="bivariatetrans.png" 
          alt="Bivariate Analysis of Bike LTS and TASA Funding" 
-         style="width: 100%; height: 90vh; max-height: 1000px;">
+         style="width: 100%; height: 100%; max-height;">
 </div>
 <p style="text-align: center;"><em>Figure 4: [Working] Map showing Bike LTS and TASA funding relationship.</em></p>
   
