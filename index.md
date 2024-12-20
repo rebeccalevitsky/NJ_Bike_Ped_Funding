@@ -5,7 +5,7 @@ for: my Command-Line GIS Final Project, and my own interests
 date last updated: 12/20/24
 
 ## Introduction
-### Big Picture:
+### Big Picture
 The goal of this page is to gain insight into how federal TASA funds for active transportation projects are geographically distributed in New Jersey.  The TASA program is the [largest source of funding](https://www.fhwa.dot.gov/environment/bicycle_pedestrian/funding/) for Bicycle & Pedestrian projects in the US, though there are many, many other federal and state programs that fund active transportation projects as well.  Information from these other programs is not included, for several reasons - as it turns out, exact dollar amounts dedicated to bicycle & pedestrian improvements is a surprisingly tedious number to arrive at:
 - different funding programs (at both federal and state levels) have different reporting requirements, and agencies (the USDOT or NJDOT, in this case) don't always publish data on awards for every distinct program.
 - many projects that use other sources of funding (let's say, a bridge repair), might involve bicycle & pedestrian improvements, but don't report the distinct funding levels for these aspects.
